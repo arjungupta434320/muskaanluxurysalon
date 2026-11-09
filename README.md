@@ -9,7 +9,7 @@
 - **Address:** 2C/2994, Shastri Nagar, Saharanpur, Uttar Pradesh 247001
 - **Google Maps Plus Code:** `XH22+3J` Saharanpur, Uttar Pradesh (Lat: 29.9502065, Lng: 77.5515495)
 - **Direct Maps Link:** [Muskaan Luxury Salon on Google Maps](https://www.google.com/maps/place/Muskaan+Luxury+Salon/@29.9502065,77.5515495,17z)
-- **Phone / Concierge:** `075007 02702` / `+91 75007 02702`
+- **Phone / Concierge:** `+91 75007 02702`
 - **WhatsApp Direct:** [Chat on WhatsApp](https://wa.me/917500702702)
 - **Operating Hours:** Monday to Sunday, 9:00 AM – 9:00 PM (Open All 7 Days)
 - **Brand Attributes:** Proudly Women-Owned 💜 | LGBTQ+ Friendly 🏳️‍🌈

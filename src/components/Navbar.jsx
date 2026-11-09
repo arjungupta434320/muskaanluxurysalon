@@ -108,7 +108,7 @@ const Navbar = () => {
             href="tel:+917500702702"
             className="font-semibold text-gold hover:text-gold-hover transition-colors"
           >
-            075007 02702
+            +91 75007 02702
           </a>
         </div>
       </div>
@@ -291,7 +291,7 @@ const Navbar = () => {
                 className="flex items-center justify-center gap-2.5 w-full py-3.5 rounded-xl border border-champagne-border bg-white text-espresso font-semibold text-sm font-body hover:border-gold/40 transition-colors min-h-[48px]"
               >
                 <Phone className="w-4 h-4 text-gold" />
-                Call 075007 02702
+                Call +91 75007 02702
               </a>
 
               {/* WhatsApp */}

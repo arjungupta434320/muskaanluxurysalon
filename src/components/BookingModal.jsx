@@ -183,7 +183,7 @@ ${skinNote ? '\n⚠️ *Skin Note:* Special Acne-Mark / Sensitive Skin Coverage 
           </a>
 
           <p className="text-[11px] text-center text-taupe">
-            Sends pre-formatted ticket straight to Muskaan Ma'am on WhatsApp (075007 02702) for instant booking confirmation.
+            Sends pre-formatted ticket straight to Muskaan Ma'am on WhatsApp (+91 75007 02702) for instant booking confirmation.
           </p>
 
           <button

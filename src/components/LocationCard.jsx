@@ -126,7 +126,7 @@ const LocationCard = () => {
                   href="tel:+917500702702"
                   className="text-sm font-medium text-espresso hover:text-gold transition-colors font-body"
                 >
-                  075007 02702
+                  +91 75007 02702
                 </a>
               </div>
 
@@ -146,7 +146,7 @@ const LocationCard = () => {
                   className="inline-flex items-center justify-center gap-2 border border-champagne-border hover:border-gold text-espresso hover:text-gold rounded-xl px-6 py-3 font-semibold text-sm transition-colors min-h-[48px]"
                 >
                   <Phone className="w-4 h-4" />
-                  Call 075007 02702
+                  Call +91 75007 02702
                 </a>
                 <a
                   href="https://wa.me/917500702702"
