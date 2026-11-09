@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C59B6D"/>
+      <stop offset="100%" style="stop-color:#AC8152"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="url(#g)" stroke-width="2"/>
+  <text x="50" y="38" text-anchor="middle" font-family="serif" font-size="24" font-weight="700" fill="#C59B6D">M</text>
+  <text x="50" y="58" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="500" fill="#6D4C5C" letter-spacing="3">LUXURY</text>
+  <text x="50" y="70" text-anchor="middle" font-family="sans-serif" font-size="7" font-weight="400" fill="#6E655F" letter-spacing="2">SALON</text>
+</svg>

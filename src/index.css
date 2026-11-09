@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAF7F2; }
+::-webkit-scrollbar-thumb { background: #E8DFD1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C59B6D; }
+
+/* ===== Scroll behavior ===== */
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ===== Hide scrollbar for horizontal pill scrollers ===== */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== Typing cursor ===== */
+.typing-cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #C59B6D;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ===== Gold shimmer gradient ===== */
+.gold-shimmer {
+  background: linear-gradient(
+    110deg,
+    #C59B6D 0%,
+    #D4B896 25%,
+    #E8D5B8 50%,
+    #D4B896 75%,
+    #C59B6D 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ===== Rose gold glow on hover ===== */
+.card-glow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 20px rgba(197, 155, 109, 0.15), 0 8px 32px rgba(197, 155, 109, 0.1);
+  border-color: #C59B6D;
+  transform: translateY(-2px);
+}
+
+/* ===== Fade up animation class for scroll reveal ===== */
+.reveal-hidden {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  filter: blur(4px);
+  will-change: opacity, transform, filter;
+  transition: 
+    opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  filter: blur(0);
+}
+
+/* ===== Tabular Numbers for Smooth Counting ===== */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}
+
+/* ===== Stagger delays ===== */
+.stagger-1 { transition-delay: 0.05s; }
+.stagger-2 { transition-delay: 0.1s; }
+.stagger-3 { transition-delay: 0.15s; }
+.stagger-4 { transition-delay: 0.2s; }
+.stagger-5 { transition-delay: 0.25s; }
+.stagger-6 { transition-delay: 0.3s; }
+.stagger-7 { transition-delay: 0.35s; }
+.stagger-8 { transition-delay: 0.4s; }
+
+/* ===== Active service chip ===== */
+.chip-active {
+  background-color: #C59B6D;
+  color: #FFFFFF;
+  border-color: #C59B6D;
+}
+
+/* ===== Step indicator ===== */
+.step-complete {
+  background-color: #C59B6D;
+  color: white;
+}
+.step-active {
+  border: 2px solid #C59B6D;
+  color: #C59B6D;
+  background-color: white;
+}
+.step-inactive {
+  border: 2px solid #E8DFD1;
+  color: #6E655F;
+  background-color: white;
+}
+
+/* ===== Toast animations ===== */
+.toast-enter {
+  animation: toastIn 0.4s ease-out forwards;
+}
+.toast-exit {
+  animation: toastOut 0.3s ease-in forwards;
+}
+
+@keyframes toastIn {
+  0% { opacity: 0; transform: translateY(16px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes toastOut {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-16px) scale(0.95); }
+}
+
+/* ===== Modal overlay ===== */
+.modal-overlay {
+  background: rgba(30, 27, 24, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ===== Gradient text ===== */
+.gradient-text {
+  background: linear-gradient(135deg, #C59B6D, #AC8152);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Mobile bottom bar safe area ===== */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ===== Pill scroller gradient masks ===== */
+.pill-scroller {
+  mask-image: linear-gradient(to right, transparent 0%, black 16px, black calc(100% - 16px), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 16px, black calc(100% - 16px), transparent 100%);
+}
+
+/* ===== Print styles ===== */
+@media print {
+  .no-print { display: none !important; }
+}
+
+/* ===== Selection color ===== */
+::selection {
+  background-color: rgba(197, 155, 109, 0.3);
+  color: #1E1B18;
+}
+
+/* ===== Focus styles ===== */
+*:focus-visible {
+  outline: 2px solid #C59B6D;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ===== Map container ===== */
+.map-container iframe {
+  border-radius: 12px;
+  border: 1px solid #E8DFD1;
+}
